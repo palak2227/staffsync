@@ -63,19 +63,27 @@ const AppNavbar = () => {
       <Container fluid className="px-lg-4">
         <Navbar.Brand as={Link} to={homeDestination} className="d-flex align-items-center gap-2 text-decoration-none">
           <div
-            className="d-flex align-items-center justify-content-center text-white fw-bold rounded-3"
+            className="d-flex align-items-center justify-content-center text-white fw-bold shadow-sm"
             style={{
-              width: '32px',
-              height: '32px',
-              backgroundColor: '#2563eb',
-              fontSize: '0.85rem',
-              letterSpacing: '-0.02em'
+              width: '34px',
+              height: '34px',
+              background: 'linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%)',
+              borderRadius: '10px',
+              fontSize: '0.95rem',
+              letterSpacing: '-0.02em',
+              boxShadow: '0 4px 10px rgba(99, 102, 241, 0.25)'
             }}
           >
-            M
+            ⚡
           </div>
-          <span className="fw-bold text-dark fs-5" style={{ letterSpacing: '-0.03em' }}>
-            Modern <span style={{ color: '#2563eb' }}>HR</span>
+          <span className="fw-bolder text-dark fs-5" style={{ letterSpacing: '-0.03em' }}>
+            Staff<span className="text-gradient">Sync</span>
+          </span>
+          <span
+            className="badge rounded-pill fw-semibold ms-1"
+            style={{ backgroundColor: '#eef2ff', color: '#6366f1', fontSize: '0.65rem', border: '1px solid #c7d2fe' }}
+          >
+            HR
           </span>
         </Navbar.Brand>
 
